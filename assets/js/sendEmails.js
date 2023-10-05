@@ -1,6 +1,8 @@
 console.log("Script file is loaded");
 
 function sendMail(contactForm) {
+    console.log("Running function")
+    console.log(contactForm.name.value)
     emailjs.send("service_9xccee6", "template_97gkps9", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
